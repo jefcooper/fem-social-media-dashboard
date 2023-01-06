@@ -1,0 +1,31 @@
+/*****************************************************************************
+ * social
+ *
+ *  social media icon section
+ *
+ *****************************************************************************/
+
+/**
+ * .social-icons
+ *
+ *  use for layout of the social icons
+ */
+.social-icons {
+  display: flex;
+  gap: 1rem;
+  zoom: 1.2;
+}
+
+/*----------------------------------------------------------------------------
+  Tablet breakpoint
+ ----------------------------------------------------------------------------*/
+@include media-breakpoint("tablet") {
+  /**
+   * .social-icons
+   *
+   *  right align on desktop
+   */
+  .social-icons {
+    justify-self: right;
+  }
+}

@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+// 1. Abstract
+@import "abstracts/functions";
+@import "abstracts/variables";
+@import "abstracts/mixins";
+
+// 2. Vendor
+
+// 3. Base
+@import "base/reset";
+@import "base/base";
+@import "base/fonts";
+@import "base/typography";
+@import "base/icons";
+@import "base/helpers";
+
+// 4. Layout
+@import "layout/social";
+@import "layout/footer";
+@import "layout/hero";
+@import "layout/benefits";
+@import "layout/latest-articles";
+
+// 5. Components
+@import "components/article-card";
+@import "components/button";
+@import "components/menu";
+
+// 6. Page-specific styles
+@import "pages/index";
+
+// 7. Themes
+@import "themes/default";
+@import "themes/dark";

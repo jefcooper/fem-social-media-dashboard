@@ -1,0 +1,132 @@
+/*****************************************************************************
+ * icons 
+ *
+ *  Definitions for various svg icons used throughout the site.
+ *
+ *****************************************************************************/
+
+/**
+ * .icon
+ *
+ *  utility class to define clickable svg icon behavior.  Note this is
+ *  located with the individual icons due to BEM naming consistency.
+ */
+.icon {
+  user-select: none;
+  cursor: pointer;
+  transition: 150ms ease-in-out; /* soften hover transition, not so abrupt */
+
+  fill: currentcolor;
+}
+.icon:hover {
+  fill: var(--theme-hover-highlight);
+}
+
+/**
+ * .icon--online
+ */
+.icon--online {
+  width: 72px;
+  height: 72px;
+}
+
+/**
+ * .icon--budgeting
+ */
+.icon--budgeting {
+  width: 72px;
+  height: 72px;
+}
+
+/**
+ * .icon--onboarding
+ */
+.icon--onboarding {
+  width: 72px;
+  height: 72px;
+}
+
+/**
+ * .icon--api
+ */
+.icon--api {
+  width: 72px;
+  height: 72px;
+}
+
+/**
+ * .icon--hamburger
+ */
+.icon--hamburger {
+  width: 24px;
+  height: 11px;
+
+  margin-block: 4px;
+}
+
+/**
+ * .icon--close
+ */
+.icon--close {
+  width: 18px;
+  height: 19px;
+
+  margin-inline: 3px;
+}
+
+/**
+ * .icon--facebook
+ *
+ *  Facebook company logo, used in footer.
+ */
+.icon--facebook {
+  width: 20px;
+  height: 20px;
+}
+/**
+ * .icon--youtube
+ *
+ * YouTube logo
+ */
+.icon--youtube {
+  width: 21px;
+  height: 20px;
+}
+
+/**
+ * .icon--instagram
+ *
+ *  Instagram company logo, used in footer.
+ */
+.icon--instagram {
+  width: 21px;
+  height: 20px;
+}
+
+/**
+ * .icon--twitter
+ *
+ *  Twitter company logo, used in footer.
+ */
+.icon--twitter {
+  width: 21px;
+  height: 18px;
+}
+/**
+ * .icon--pinterest
+ *  Pinterest company logo, used in footer.
+ */
+.icon--pinterest {
+  width: 20px;
+  height: 20px;
+}
+
+/**
+ * .icon--logo
+ *
+ *  Easybank logo
+ */
+.icon--logo {
+  width: 139px;
+  height: 20px;
+}

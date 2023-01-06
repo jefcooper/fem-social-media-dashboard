@@ -1,0 +1,45 @@
+/*****************************************************************************
+ * latest-articles
+ *
+ *  Section containing a list of recent articles.
+ *
+ *****************************************************************************/
+
+/**
+  * latest-articles
+  *
+  *   Latest articles section
+  */
+.latest-articles {
+  padding-block: pxToRem(88px);
+  background-color: var(--theme-bg-200);
+}
+
+.latest-articles .article-card {
+  margin-top: 1.5rem;
+}
+
+.latest-articles .article-card:first-of-type {
+  margin-top: 2rem;
+}
+
+.latest-articles .article-cards {
+  display: grid;
+}
+
+/*----------------------------------------------------------------------------
+  Tablet breakpoint
+ ----------------------------------------------------------------------------*/
+@include media-breakpoint("tablet") {
+  .latest-articles .article-cards {
+    grid-auto-flow: column;
+    gap: pxToRem(30px);
+    margin-top: pxToRem(40px);
+  }
+  .latest-articles .article-card {
+    margin-top: 0;
+  }
+  .latest-articles .article-card:first-of-type {
+    margin-top: 0;
+  }
+}

@@ -1,0 +1,58 @@
+/*****************************************************************************
+ * dark theme
+ *
+ *  Dark Theme Variant
+ *
+ *  Colors are named using application-level-transparency.  e.g.
+ *
+ *  background-200, is applied to backgrounds, level 200 color, and is opaque
+ *  text-100-400, is applied to text, level 100 color, and is 50% transparent.
+ *
+ *  Note that I'm using a 0 - 1000 numbering convention for both color and
+ *  transparency to allow fine gradation in future and consistency with
+ *  popular schemes.
+ *
+ *  For transparency number, no number is opaque, 900 is almost transparent.
+ *
+ *****************************************************************************/
+
+@use "sass:color";
+
+.theme--dark {
+  // four bg's.  dark, white, light-gray, medium-gray
+  --theme-bg-100: #{$clr-neutral-900};
+  --theme-bg-200: #{$clr-neutral-300};
+  --theme-bg-400: #{$clr-neutral-200};
+  --theme-bg-900: #{$clr-neutral-100};
+  --theme-bg-900-400: #{color.change($clr-neutral-100, $alpha: 0.5)};
+
+  --theme-txt-100-400: #{color.change($clr-neutral-900, $alpha: 0.5)};
+  --theme-txt-100: #{$clr-neutral-900};
+  --theme-txt-400: #{$clr-neutral-500};
+  --theme-txt-900: #{$clr-neutral-100};
+
+  --theme-accent-400: #{$clr-accent-400};
+  --theme-btn-txt: #{$clr-neutral-900};
+  --theme-btn-bg: linear-gradient(
+    135deg,
+    #{$clr-accent-400},
+    #{$clr-accent-500}
+  );
+  --theme-menu-overlay: linear-gradient(
+    #{$clr-neutral-900},
+    #{color.change($clr-neutral-900, $alpha: 0)}
+  );
+  --theme-icon-hover: #{$clr-accent-400};
+
+  // menu colors
+  --theme-menu-text: #{$clr-neutral-300};
+  --theme-menu-text-highlight: #{$clr-neutral-500};
+  --theme-menu-accent: #{$clr-accent-400};
+  --theme-menu-background: #{$clr-neutral-100};
+  --theme-menu-popup-color: #{$clr-neutral-900};
+  --theme-menu-popup-background: #{$clr-neutral-100};
+  --theme-menu-overlay: linear-gradient(
+    #{$clr-neutral-900},
+    #{color.change($clr-neutral-900, $alpha: 0)}
+  );
+}
