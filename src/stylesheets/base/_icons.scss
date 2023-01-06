@@ -23,55 +23,23 @@
 }
 
 /**
- * .icon--online
+ * .icon--down
+ *
+ *  Down arrow
  */
-.icon--online {
-  width: 72px;
-  height: 72px;
+.icon--down {
+  width: 8px;
+  height: 4px;
 }
 
 /**
- * .icon--budgeting
+ * .icon--up
+ *
+ *  Up arrow
  */
-.icon--budgeting {
-  width: 72px;
-  height: 72px;
-}
-
-/**
- * .icon--onboarding
- */
-.icon--onboarding {
-  width: 72px;
-  height: 72px;
-}
-
-/**
- * .icon--api
- */
-.icon--api {
-  width: 72px;
-  height: 72px;
-}
-
-/**
- * .icon--hamburger
- */
-.icon--hamburger {
-  width: 24px;
-  height: 11px;
-
-  margin-block: 4px;
-}
-
-/**
- * .icon--close
- */
-.icon--close {
-  width: 18px;
-  height: 19px;
-
-  margin-inline: 3px;
+.icon--up {
+  width: 8px;
+  height: 4px;
 }
 
 /**
@@ -83,13 +51,14 @@
   width: 20px;
   height: 20px;
 }
+
 /**
  * .icon--youtube
  *
  * YouTube logo
  */
 .icon--youtube {
-  width: 21px;
+  width: 20px;
   height: 20px;
 }
 
@@ -99,7 +68,7 @@
  *  Instagram company logo, used in footer.
  */
 .icon--instagram {
-  width: 21px;
+  width: 20px;
   height: 20px;
 }
 
@@ -109,24 +78,6 @@
  *  Twitter company logo, used in footer.
  */
 .icon--twitter {
-  width: 21px;
-  height: 18px;
-}
-/**
- * .icon--pinterest
- *  Pinterest company logo, used in footer.
- */
-.icon--pinterest {
   width: 20px;
-  height: 20px;
-}
-
-/**
- * .icon--logo
- *
- *  Easybank logo
- */
-.icon--logo {
-  width: 139px;
-  height: 20px;
+  height: 17px;
 }
