@@ -21,6 +21,24 @@
   background-color: var(--theme-impressions-bg);
   border-radius: 5px;
   overflow: hidden;
+  cursor: pointer;
+}
+.impressions__fig:hover {
+  background-color: var(--theme-impressions-hover);
+}
+.impressions__delta {
+  color: $clr-accent-green;
+}
+.impressions__delta.impressions--negative {
+  color: $clr-accent-red;
+}
+.impressions__delta::before {
+  content: url("/assets/icon-up.svg");
+  width: 8px;
+  margin-right: 0.3rem;
+}
+.impressions__delta.impressions--negative::before {
+  content: url("/assets/icon-down.svg");
 }
 
 /*----------------------------------------------------------------------------
@@ -29,8 +47,8 @@
 @include media-breakpoint("tablet") {
   .impressions {
     gap: pxToRem(30px);
-    grid-auto-flow: column;
-    grid-template-rows: auto auto;
+    grid-auto-flow: row;
+    grid-template-columns: repeat(4, auto);
     padding-bottom: pxToRem(75px);
   }
 }

@@ -15,6 +15,10 @@
   background-color: var(--theme-followers-bg);
   text-align: center;
   overflow: hidden;
+  cursor: pointer;
+}
+.followers__fig:hover {
+  background-color: var(--theme-followers-hover);
 }
 .followers__fig .social-media {
   display: flex;
@@ -53,6 +57,18 @@
 }
 .followers__today {
   margin-top: pxToRem(25px);
+  color: $clr-accent-green;
+}
+.followers--negative {
+  color: $clr-accent-red;
+}
+.followers__today::before {
+  content: url("/assets/icon-up.svg");
+  width: 8px;
+  margin-right: 0.3rem;
+}
+.followers__today.followers--negative::before {
+  content: url("/assets/icon-down.svg");
 }
 
 /*----------------------------------------------------------------------------
