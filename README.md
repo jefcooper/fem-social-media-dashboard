@@ -22,6 +22,23 @@ This is a solution to the [Social media dashboard with theme switcher challenge 
 
 ## Overview
 
+Three color themes are created as CSS classes. theme--default, theme--dark, and theme--light. The theme--default utilizes @media (prefers-color-scheme: dark/light) to change its definition dynamically based on the system settings. Sass @mixin's are used for the light/dark themes to make them reusable and eliminate duplication when creating theme--default.
+
+All theme classes define a set of custom properties that are used to style the application:
+
+```
+.theme {
+  --theme-bg: hsl(0, 0, 100%);
+  ...
+}
+```
+
+.theme--default is used on the body element of the document. Javascript is used to query the state of the media and determine initial scheme. An event listener is attached to watch for changes of the media.
+
+A toggle checkbox has a data-color-scheme-toggle attribute that the javascript uses to watch and set the state based on color scheme.
+
+At any time, the user may override the system selection by toggling the checkbox. At this point, the theme--default on body will be programmatically replaced with the desired theme--dark or theme--light.
+
 ### The challenge
 
 ### Screenshot
@@ -49,6 +66,9 @@ This is a solution to the [Social media dashboard with theme switcher challenge 
 ### Bugs and Finishing Steps
 
 ### Useful resources
+
+- https://stackoverflow.com/questions/56393880/how-do-i-detect-dark-mode-using-javascript
+- https://www.section.io/engineering-education/watch-for-system-dark-mode-using-js-css/
 
 #### Tooling
 

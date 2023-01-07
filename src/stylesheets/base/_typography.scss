@@ -14,9 +14,18 @@
  */
 .heading--1 {
   font-family: $ff-base;
-  font-weight: $fw-regular;
-  font-size: 2.5rem;
-  line-height: 1.175;
-  text-align: center;
-  letter-spacing: -0.714286px;
+  font-weight: $fw-bold;
+  font-size: pxToRem(24px);
+  line-height: pxLineHeight(24px, 29px);
+  text-align: left;
+  color: var(--theme-text-dark);
+}
+
+.subheading--1 {
+  font-family: $ff-base;
+  font-weight: $fw-bold;
+  font-size: pxToRem(14px);
+  line-height: pxLineHeight(14px, 17px);
+  text-align: left;
+  color: var(--theme-text-regular);
 }

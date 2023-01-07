@@ -8,73 +8,160 @@
   <meta name="description" content="Front-end mentor Social Media Dashboard challenge">
 
   <link rel="stylesheet" href="stylesheets/main.scss">
+  <script src="script.js" type="module"></script>
 
   <title>Front-end Mentor Social Media Dashboard</title>
 </head>
 
-<body>
-  Social Media Dashboard
-  Total Followers: 23,004
+<body class="theme--default">
+  <header class="header">
+    <h1 class="heading--1">
+      Social Media Dashboard
+    </h1>
+    <p class="subheading--1">
+      Total Followers: 23,004
+    </p>
 
-  Dark Mode
+    <label for="dark-mode__toggle" class="dark-mode__toggle-label">Dark Mode</label>
+    <input type="checkbox" data-color-scheme-toggle name="dark-mode__toggle" id="dark-mode__toggle">
+  </header>
+  <main class="main">
+    <section class="summary">
+      <figure class="followers__fig">
+        <figcaption class="visually-hidden">Facebook Followers</figcaption>
+        <div class="social-media">
+          <svg class="icon icon--facebook" aria-hidden="true">
+            <use href="assets/icons.svg#icon-facebook"></use>
+          </svg>
+          <p class="social-media__handle">@nathanf</p>
+        </div>
+        <p class="followers__count">1987</p>
+        <p class="followers__label">Followers</p>
+        <p class="followers__today">12 Today</p>
+      </figure>
 
+      <figure class="followers__fig">
+        <figcaption class="visually-hidden">Twitter Followers</figcaption>
+        <div class="social-media">
+          <svg class="icon icon--twitter" aria-hidden="true">
+            <use href="assets/icons.svg#icon-twitter"></use>
+          </svg>
+          <p class="social-media__handle">@nathanf</p>
+        </div>
+        <p class="followers__count">1044</p>
+        <p class="followers__label">Followers</p>
+        <p class="followers__today">99 Today</p>
+      </figure>
 
+      <figure class="follower-figure">
+        <figcaption class="visually-hidden">Instagram Followers</figcaption>
+        <div class="social-media">
+          <img class="icon--instagram" src="assets/icon-instagram.svg" alt="" aria-hidden="true">
+          <p class="social-media__handle">@realnathanf</p>
+        </div>
+        <p class="followers__count">11k</p>
+        <p class="followers__label">Followers</p>
+        <p class="followers__today">1099 Today</p>
+      </figure>
 
-  @nathanf
-  1987
-  Followers
-  12 Today
+      <figure class="follower-figure">
+        <figcaption class="visually-hidden">YouTube Subscribers</figcaption>
+        <div class="social-media">
+          <svg class="icon icon--youtube" aria-hidden="true">
+            <use href="assets/icons.svg#icon-youtube"></use>
+          </svg>
+          <p class="social-media__handle">Nathan F.</p>
+        </div>
+        <p class="followers__count">8239</p>
+        <p class="followers__label">Subscribers</p>
+        <p class="followers__today">144 Today</p>
+      </figure>
+    </section>
 
-  @nathanf
-  1044
-  Followers
-  99 Today
+    <section class="today">
+      <h2 class="heading--2">
+        Overview - Today
+      </h2>
 
-  @realnathanf
-  11k
-  Followers
-  1099 Today
+      <div class="impressions">
+        <figure class="impressions__fig">
+          <figcaption class="visually-hidden">Facebook Page Views</figcaption>
+          <svg class="icon icon--facebook" aria-hidden="true">
+            <use href="assets/icons.svg#icon-facebook"></use>
+          </svg>
+          <p class="impressions__category">Page Views</p>
+          <p class="impressions__count">87</p>
+          <p class="impressions__delta">3%</p>
+        </figure>
 
-  Nathan F.
-  8239
-  Subscribers
-  144 Today
+        <figure class="impressions__fig">
+          <figcaption class="visually-hidden">Facebook Likes</figcaption>
+          <svg class="icon icon--facebook" aria-hidden="true">
+            <use href="assets/icons.svg#icon-facebook"></use>
+          </svg>
+          <p class="impressions__category">Likes</p>
+          <p class="impressions__count">52</p>
+          <p class="impressions__delta">2%</p>
+        </figure>
 
+        <figure class="impressions__fig">
+          <figcaption class="visually-hidden">Instagram Likes</figcaption>
+          <img class="icon--instagram" src="assets/icon-instagram.svg" alt="" aria-hidden="true">
+          <p class="impressions__category">Likes</p>
+          <p class="impressions__count">5462</p>
+          <p class="impressions__delta">2257%</p>
+        </figure>
 
+        <figure class="impressions__fig">
+          <figcaption class="visually-hidden">Instagram Profile Views</figcaption>
+          <img class="icon--instagram" src="assets/icon-instagram.svg" alt="" aria-hidden="true">
+          <p class="impressions__category">Profile Views</p>
+          <p class="impressions__count">52k</p>
+          <p class="impressions__delta">1375%</p>
+        </figure>
 
-  Overview - Today
+        <figure class="impressions__fig">
+          <figcaption class="visually-hidden">Twitter Retweets</figcaption>
+          <svg class="icon icon--twitter" aria-hidden="true">
+            <use href="assets/icons.svg#icon-twitter"></use>
+          </svg>
+          <p class="impressions__category">Retweets</p>
+          <p class="impressions__count">117</p>
+          <p class="impressions__delta">303%</p>
+        </figure>
 
-  Page Views
-  87
-  3%
+        <figure class="impressions__fig">
+          <figcaption class="visually-hidden">Twitter Likes</figcaption>
+          <svg class="icon icon--twitter" aria-hidden="true">
+            <use href="assets/icons.svg#icon-twitter"></use>
+          </svg>
+          <p class="impressions__category">Likes</p>
+          <p class="impressions__count">507</p>
+          <p class="impressions__delta">553%</p>
+        </figure>
 
-  Likes
-  52
-  2%
+        <figure class="impressions__fig">
+          <figcaption class="visually-hidden">YouTube Likes</figcaption>
+          <svg class="icon icon--youtube" aria-hidden="true">
+            <use href="assets/icons.svg#icon-youtube"></use>
+          </svg>
+          <p class="impressions__category">Likes</p>
+          <p class="impressions__count">107</p>
+          <p class="impressions__delta">19%</p>
+        </figure>
 
-  Likes
-  5462
-  2257%
-
-  Profile Views
-  52k
-  1375%
-
-  Retweets
-  117
-  303%
-
-  Likes
-  507
-  553%
-
-  Likes
-  107
-  19%
-
-  Total Views
-  1407
-  12%
+        <figure class="impressions__fig">
+          <figcaption class="visually-hidden">YouTube Total Views</figcaption>
+          <svg class="icon icon--youtube" aria-hidden="true">
+            <use href="assets/icons.svg#icon-youtube"></use>
+          </svg>
+          <p class="impressions__category">Total Views</p>
+          <p class="impressions__count">1407</p>
+          <p class="impressions__delta">12%</p>
+        </figure>
+      </div>
+    </section>
+  </main>
 </body>
 
 </html>

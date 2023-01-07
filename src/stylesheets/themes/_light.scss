@@ -1,7 +1,7 @@
 /*****************************************************************************
- * dark theme
+ * theme default
  *
- *  Dark Theme Variant
+ *  Default color scheme (light).
  *
  *  Colors are named using application-level-transparency.  e.g.
  *
@@ -18,38 +18,50 @@
 
 @use "sass:color";
 
-.theme--dark {
-  --theme-text-dark: #{$clr-neutral-100};
-  --theme-text-regular: #{$clr-neutral-500};
+// $grad-toggle
+// $clr-accent-red
+// $clr-accent-green
+// $clr-facebook
+// $clr-twitter
+// $grad-instagram
+// $clr-youtube
+
+// $clr-neutral-100
+// $clr-neutral-200 - very pale blue (top BG pattern), light theme
+// $clr-neutral-300 - Light Grayish Blue (Card BG),light theme
+// $clr-neutral-400 - disabled toggle
+// $clr-neutral-500 - Desaturated Blue (Text), dark theme
+// $clr-neutral-600 - Dark Grayish Blue (Text), light theme
+// $clr-neutral-700 - Dark Desaturated Blue (Card BG), dark theme
+// $clr-neutral-800 - Very Dark Blue (Top BG Pattern), dark theme
+// $clr-neutral-900 - Very Dark Blue (Text), light theme, dark theme
+.theme--light {
+  --theme-text-dark: #{$clr-neutral-900};
+  --theme-text-regular: #{$clr-neutral-600};
   --theme-text-red: #{$clr-accent-red};
   --theme-text-green: #{$clr-accent-green};
-
-  --theme-bg: #{$clr-neutral-900};
+  --theme-bg: #{$clr-neutral-100};
 
   // four bg's.  dark, white, light-gray, medium-gray
-  --theme-bg-100: #{$clr-neutral-900};
-  --theme-bg-200: #{$clr-neutral-300};
-  --theme-bg-400: #{$clr-neutral-200};
-  --theme-bg-900: #{$clr-neutral-100};
-  --theme-bg-900-400: #{color.change($clr-neutral-100, $alpha: 0.5)};
+  --theme-bg-100: #{$clr-neutral-100};
+  --theme-bg-200: #{$clr-neutral-200};
+  --theme-bg-400: #{$clr-neutral-300};
+  --theme-bg-900: #{$clr-neutral-900};
+  --theme-bg-900-400: #{color.change($clr-neutral-900, $alpha: 0.5)};
 
-  --theme-txt-100-400: #{color.change($clr-neutral-900, $alpha: 0.5)};
-  --theme-txt-100: #{$clr-neutral-900};
+  --theme-txt-100-400: #{color.change($clr-neutral-100, $alpha: 0.5)};
+  --theme-txt-100: #{$clr-neutral-100};
   --theme-txt-400: #{$clr-neutral-500};
-  --theme-txt-900: #{$clr-neutral-100};
+  --theme-txt-900: #{$clr-neutral-900};
 
   --theme-accent-400: #{$clr-accent-red};
-  --theme-btn-txt: #{$clr-neutral-900};
+  --theme-btn-txt: #{$clr-neutral-100};
   --theme-btn-bg: linear-gradient(
     135deg,
     #{$clr-accent-red},
     #{$clr-accent-green}
   );
-  --theme-menu-overlay: linear-gradient(
-    #{$clr-neutral-900},
-    #{color.change($clr-neutral-900, $alpha: 0)}
-  );
-  --theme-icon-hover: #{$clr-accent-red};
+  --theme-hover-highlight: #{$clr-accent-red};
 
   // menu colors
   --theme-menu-text: #{$clr-neutral-300};
@@ -64,38 +76,33 @@
   );
 }
 
-@mixin theme---dark {
-  --theme-text-dark: #{$clr-neutral-100};
-  --theme-text-regular: #{$clr-neutral-500};
+@mixin theme---light {
+  --theme-text-dark: #{$clr-neutral-900};
+  --theme-text-regular: #{$clr-neutral-600};
   --theme-text-red: #{$clr-accent-red};
   --theme-text-green: #{$clr-accent-green};
-
-  --theme-bg: #{$clr-neutral-900};
+  --theme-bg: #{$clr-neutral-100};
 
   // four bg's.  dark, white, light-gray, medium-gray
-  --theme-bg-100: #{$clr-neutral-900};
-  --theme-bg-200: #{$clr-neutral-300};
-  --theme-bg-400: #{$clr-neutral-200};
-  --theme-bg-900: #{$clr-neutral-100};
-  --theme-bg-900-400: #{color.change($clr-neutral-100, $alpha: 0.5)};
+  --theme-bg-100: #{$clr-neutral-100};
+  --theme-bg-200: #{$clr-neutral-200};
+  --theme-bg-400: #{$clr-neutral-300};
+  --theme-bg-900: #{$clr-neutral-900};
+  --theme-bg-900-400: #{color.change($clr-neutral-900, $alpha: 0.5)};
 
-  --theme-txt-100-400: #{color.change($clr-neutral-900, $alpha: 0.5)};
-  --theme-txt-100: #{$clr-neutral-900};
+  --theme-txt-100-400: #{color.change($clr-neutral-100, $alpha: 0.5)};
+  --theme-txt-100: #{$clr-neutral-100};
   --theme-txt-400: #{$clr-neutral-500};
-  --theme-txt-900: #{$clr-neutral-100};
+  --theme-txt-900: #{$clr-neutral-900};
 
   --theme-accent-400: #{$clr-accent-red};
-  --theme-btn-txt: #{$clr-neutral-900};
+  --theme-btn-txt: #{$clr-neutral-100};
   --theme-btn-bg: linear-gradient(
     135deg,
     #{$clr-accent-red},
     #{$clr-accent-green}
   );
-  --theme-menu-overlay: linear-gradient(
-    #{$clr-neutral-900},
-    #{color.change($clr-neutral-900, $alpha: 0)}
-  );
-  --theme-icon-hover: #{$clr-accent-red};
+  --theme-hover-highlight: #{$clr-accent-red};
 
   // menu colors
   --theme-menu-text: #{$clr-neutral-300};
