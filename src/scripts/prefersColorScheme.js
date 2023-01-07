@@ -33,13 +33,6 @@ const defaultThemeClass = "theme--default";
 const lightThemeClass = "theme--light";
 const darkThemeClass = "theme--dark";
 
-//
-// [data-color-scheme-toggle]
-// [data-color-scheme-toggle-default]
-// [data-color-scheme-toggle-off]
-// [data-color-scheme-toggle-on]
-//
-
 // toggleElements contains an array of all toggle switches (checkbox) that know theme state
 const toggleElements = getToggleElements();
 
