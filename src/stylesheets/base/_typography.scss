@@ -9,6 +9,21 @@
  * Default and mobile typography
  *--------------------------------------------------------------------------*/
 
+%regular-text-properties {
+  font-family: $ff-base;
+  font-weight: $fw-bold;
+  font-size: pxToRem(14px);
+  line-height: pxLineHeight(14px, 17px);
+  color: var(--theme-text-regular);
+}
+%small-text-properties {
+  font-family: $ff-base;
+  font-weight: $fw-bold;
+  font-size: pxToRem(12px);
+  line-height: pxLineHeight(12px, 15px);
+  color: var(--theme-text-regular);
+}
+
 /**
  * Hero Section Title - Next generation digital banking
  */
@@ -21,11 +36,71 @@
   color: var(--theme-text-dark);
 }
 
-.subheading--1 {
+.social-media__handle {
+  @extend %small-text-properties;
+}
+.followers__count {
+  display: block;
   font-family: $ff-base;
   font-weight: $fw-bold;
-  font-size: pxToRem(14px);
-  line-height: pxLineHeight(14px, 17px);
+  font-size: pxToRem(56px);
+  line-height: pxLineHeight(56px, 48px);
+  letter-spacing: -2px;
   text-align: left;
+  color: var(--theme-text-dark);
+}
+.followers__label {
+  font-family: $ff-base;
+  font-weight: $fw-regular;
+  font-size: pxToRem(12px);
+  line-height: pxLineHeight(12px, 15px);
   color: var(--theme-text-regular);
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+.followers__today {
+  @extend %small-text-properties;
+}
+
+.heading--2 {
+  font-family: $ff-base;
+  font-weight: $fw-bold;
+  font-size: pxToRem(24px);
+  line-height: pxLineHeight(24px, 29px);
+  text-align: left;
+  color: var(--theme-text-dark);
+}
+
+.subheading--1 {
+  @extend %regular-text-properties;
+  text-align: left;
+}
+
+.dark-mode__toggle-label {
+  @extend %regular-text-properties;
+}
+
+.impressions__category {
+  @extend %regular-text-properties;
+}
+.impressions__count {
+  font-family: $ff-base;
+  font-weight: $fw-bold;
+  font-size: pxToRem(32px);
+  line-height: pxLineHeight(32px, 39px);
+  text-align: left;
+  color: var(--theme-text-dark);
+}
+.impressions__delta {
+  @extend %small-text-properties;
+}
+
+/*----------------------------------------------------------------------------
+  Tablet breakpoint
+ ----------------------------------------------------------------------------*/
+@include media-breakpoint("tablet") {
+  .heading--1 {
+    font-size: pxToRem(28px);
+    line-height: pxLineHeight(28px, 34px);
+  }
 }
