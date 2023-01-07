@@ -1,28 +1,41 @@
 .header {
   display: grid;
-  grid-auto-flow: column;
   align-content: flex-start;
-  justify-content: space-between;
   background-color: var(--theme-header-bg);
   padding-top: pxToRem(36px);
   border-radius: 0px 0px 20px 20px;
-  height: 244px;
+  height: 235px;
 }
 .header__group {
-  display: flex;
+  display: grid;
   flex-direction: column;
   gap: 0.7rem;
+  margin-bottom: 1.5rem;
 }
 .dark-mode-toggle {
   display: grid;
   grid-auto-flow: column;
   align-content: center;
   align-items: center;
+  justify-content: space-between;
   gap: 1rem;
+
+  padding-top: 1rem;
+  border-top: 1px solid;
+  border-color: var(--theme-header-hr);
 }
 
 /*----------------------------------------------------------------------------
   Tablet breakpoint
  ----------------------------------------------------------------------------*/
 @include media-breakpoint("tablet") {
+  .header {
+    grid-auto-flow: column;
+    align-content: flex-start;
+    justify-content: space-between;
+    height: 244px;
+  }
+  .dark-mode-toggle {
+    border-top: 0;
+  }
 }

@@ -17,6 +17,11 @@ $grad-toggle: linear-gradient(
   hsl(146, 68%, 55%),
   hsl(210, 78%, 56%)
 ); // Toggle: linear gradient
+$grad-toggle-gray: linear-gradient(
+  225deg,
+  hsl(230, 22%, 74%),
+  hsl(230, 22%, 74%)
+); // Toggle: linear gradient
 
 $grad-instagram: linear-gradient(
   225deg,

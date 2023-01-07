@@ -62,10 +62,13 @@
     #{$clr-neutral-900},
     #{color.change($clr-neutral-900, $alpha: 0)}
   );
-  --theme-slider-bg: $grad-toggle;
-  --theme-slider-thumb: black;
+  --theme-slider-bg: #{$grad-toggle};
+  --theme-slider-hover: #{$grad-toggle};
+  --theme-slider-thumb: #{$clr-neutral-700};
 
   --theme-header-bg: #{$clr-neutral-800};
+  --theme-header-hr: #{$clr-neutral-600};
+
   --theme-followers-bg: #{$clr-neutral-700};
   --theme-impressions-bg: #{$clr-neutral-700};
 }

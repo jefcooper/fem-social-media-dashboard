@@ -20,9 +20,12 @@
   inset: 0;
   border-radius: var(--_toggle-switch__height);
 
-  background-image: $grad-toggle;
+  background-image: var(--theme-slider-bg);
   cursor: pointer;
   transition: var(--_toggle-switch__transition) ease-in-out;
+}
+.toggle-switch__slider:hover {
+  background-image: var(--theme-slider-hover);
 }
 
 .toggle-switch__slider::before {
