@@ -5,6 +5,10 @@
  *
  *****************************************************************************/
 
+:root {
+  // indicate to browser that both schemes are supported by the page
+  color-scheme: dark light;
+}
 /**
  * body
  */
