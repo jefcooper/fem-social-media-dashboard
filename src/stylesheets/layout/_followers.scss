@@ -61,5 +61,6 @@
   .followers {
     gap: pxToRem(30px);
     grid-auto-flow: column;
+    margin-top: -108px;
   }
 }

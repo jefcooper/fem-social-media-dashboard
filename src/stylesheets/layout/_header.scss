@@ -1,3 +1,28 @@
 .header {
+  display: grid;
+  grid-auto-flow: column;
+  align-content: flex-start;
+  justify-content: space-between;
   background-color: var(--theme-header-bg);
+  padding-top: pxToRem(36px);
+  border-radius: 0px 0px 20px 20px;
+  height: 244px;
+}
+.header__group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+.dark-mode-toggle {
+  display: grid;
+  grid-auto-flow: column;
+  align-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+/*----------------------------------------------------------------------------
+  Tablet breakpoint
+ ----------------------------------------------------------------------------*/
+@include media-breakpoint("tablet") {
 }
