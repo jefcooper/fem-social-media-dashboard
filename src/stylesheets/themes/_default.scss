@@ -1,18 +1,18 @@
 /*****************************************************************************
  * theme default
  *
- *  Default color scheme (light).
+ *  This theme is generated twice under different media queries.
+ *  This means that when the .theme--default class is attached to body, then
+ *  the page will receive custom CSS properties that depend on the system
+ *  theme.
  *
- *  Colors are named using application-level-transparency.  e.g.
+ *  theme---light and theme---dark are Sass mixins that are reused
+ *  both here and in their respective theme classes.  theme---light is used to
+ *  define .theme--light, and likewise theme---dark is used to define
+ *  .theme--dark.
  *
- *  background-200, is applied to backgrounds, level 200 color, and is opaque
- *  text-100-400, is applied to text, level 100 color, and is 50% transparent.
- *
- *  Note that I'm using a 0 - 1000 numbering convention for both color and
- *  transparency to allow fine gradation in future and consistency with
- *  popular schemes.
- *
- *  For transparency number, no number is opaque, 900 is almost transparent.
+ *  So by switching the class on body from .theme--default to .theme--light/dark
+ *  we can explicitly override the automatic selection in .theme--default.
  *
  *****************************************************************************/
 
