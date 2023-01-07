@@ -75,6 +75,7 @@ At any time, the user may override the system selection by toggling the checkbox
 - https://www.joshwcomeau.com/css/custom-css-reset/
 - https://svg-sprite-generator.vercel.app/
 - https://medium.com/swlh/better-ways-to-organise-css-properties-9a066e7ded62
+- https://www.w3schools.com/howto/howto_css_switch.asp
 
 #### Unsplash
 
