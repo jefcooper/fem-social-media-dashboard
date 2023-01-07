@@ -33,15 +33,23 @@ All theme classes define a set of custom properties that are used to style the a
 }
 ```
 
-.theme--default is used on the body element of the document. Javascript is used to query the state of the media and determine initial scheme. An event listener is attached to watch for changes of the media.
+.theme--default is used on the body element of the document. Javascript is used to query the state of the media and determine initial scheme. An event listener is attached to watch for changes of the media in order to keep toggle buttons in sync with automatically changing system schemes.
 
 A toggle checkbox has a data-color-scheme-toggle attribute that the javascript uses to watch and set the state based on color scheme.
 
-At any time, the user may override the system selection by toggling the checkbox. At this point, the theme--default on body will be programmatically replaced with the desired theme--dark or theme--light.
+At any time, the user may override the system selection by toggling the checkbox. At this point, the theme--default on body will be programmatically replaced with the desired theme--dark or theme--light.  This preference is also output to localstorage for rehydration when the page is refreshed or reloaded.
 
-### The challenge
+The sticky, localstorage state is cleared when the user toggles to a mode matching the system.  This restores the default theme so that automatic day/night shifts happen.
 
 ### Screenshot
+
+Desktop:
+
+![Desktop Screenshots](./screenshots/screenshot-desktop.webp)
+
+Mobile:
+
+![Mobile Screenshots](./screenshots/screenshot-mobile.webp)
 
 ### Links
 
@@ -63,7 +71,9 @@ At any time, the user may override the system selection by toggling the checkbox
 
 ### What I learned
 
-- gradient at top of card for instagram
+- a simple SaSS + CSS custom properties theme approach
+- @media (prefers-color-scheme: "dark")
+- javascript event listener on "change" events from media queries
 
 ### Bugs and Finishing Steps
 
