@@ -14,7 +14,7 @@
 </head>
 
 <body class="theme--default">
-  <header class="header">
+  <header class="header container">
     <h1 class="heading--1">
       Social Media Dashboard
     </h1>
@@ -22,15 +22,15 @@
       Total Followers: 23,004
     </p>
 
-    <span>Dark Mode</span>
+    <label for="dark-mode-toggle-switch" class="dark-mode-toggle__label">Dark Mode</label>
     <label class="toggle-switch">
-      <input type="checkbox" data-dark-mode-toggle>
+      <input type="checkbox" id="dark-mode-toggle-switch" data-dark-mode-toggle>
       <span class="toggle-switch__slider"></span>
     </label>
   </header>
-  <main class="main">
-    <section class="summary">
-      <figure class="followers__fig">
+  <main class="main container">
+    <section class="followers">
+      <figure class="followers__fig followers__fig--facebook">
         <figcaption class="visually-hidden">Facebook Followers</figcaption>
         <div class="social-media">
           <svg class="icon icon--facebook" aria-hidden="true">
@@ -43,7 +43,7 @@
         <p class="followers__today">12 Today</p>
       </figure>
 
-      <figure class="followers__fig">
+      <figure class="followers__fig followers__fig--twitter">
         <figcaption class="visually-hidden">Twitter Followers</figcaption>
         <div class="social-media">
           <svg class="icon icon--twitter" aria-hidden="true">
@@ -56,7 +56,7 @@
         <p class="followers__today">99 Today</p>
       </figure>
 
-      <figure class="follower-figure">
+      <figure class="followers__fig followers__fig--instagram">
         <figcaption class="visually-hidden">Instagram Followers</figcaption>
         <div class="social-media">
           <img class="icon--instagram" src="assets/icon-instagram.svg" alt="" aria-hidden="true">
@@ -67,7 +67,7 @@
         <p class="followers__today">1099 Today</p>
       </figure>
 
-      <figure class="follower-figure">
+      <figure class="followers__fig followers__fig--youtube">
         <figcaption class="visually-hidden">YouTube Subscribers</figcaption>
         <div class="social-media">
           <svg class="icon icon--youtube" aria-hidden="true">
@@ -89,76 +89,76 @@
       <div class="impressions">
         <figure class="impressions__fig">
           <figcaption class="visually-hidden">Facebook Page Views</figcaption>
+          <p class="impressions__category">Page Views</p>
           <svg class="icon icon--facebook" aria-hidden="true">
             <use href="assets/icons.svg#icon-facebook"></use>
           </svg>
-          <p class="impressions__category">Page Views</p>
           <p class="impressions__count">87</p>
           <p class="impressions__delta">3%</p>
         </figure>
 
         <figure class="impressions__fig">
           <figcaption class="visually-hidden">Facebook Likes</figcaption>
+          <p class="impressions__category">Likes</p>
           <svg class="icon icon--facebook" aria-hidden="true">
             <use href="assets/icons.svg#icon-facebook"></use>
           </svg>
-          <p class="impressions__category">Likes</p>
           <p class="impressions__count">52</p>
           <p class="impressions__delta">2%</p>
         </figure>
 
         <figure class="impressions__fig">
           <figcaption class="visually-hidden">Instagram Likes</figcaption>
-          <img class="icon--instagram" src="assets/icon-instagram.svg" alt="" aria-hidden="true">
           <p class="impressions__category">Likes</p>
+          <img class="icon--instagram" src="assets/icon-instagram.svg" alt="" aria-hidden="true">
           <p class="impressions__count">5462</p>
           <p class="impressions__delta">2257%</p>
         </figure>
 
         <figure class="impressions__fig">
           <figcaption class="visually-hidden">Instagram Profile Views</figcaption>
-          <img class="icon--instagram" src="assets/icon-instagram.svg" alt="" aria-hidden="true">
           <p class="impressions__category">Profile Views</p>
+          <img class="icon--instagram" src="assets/icon-instagram.svg" alt="" aria-hidden="true">
           <p class="impressions__count">52k</p>
           <p class="impressions__delta">1375%</p>
         </figure>
 
         <figure class="impressions__fig">
           <figcaption class="visually-hidden">Twitter Retweets</figcaption>
+          <p class="impressions__category">Retweets</p>
           <svg class="icon icon--twitter" aria-hidden="true">
             <use href="assets/icons.svg#icon-twitter"></use>
           </svg>
-          <p class="impressions__category">Retweets</p>
           <p class="impressions__count">117</p>
           <p class="impressions__delta">303%</p>
         </figure>
 
         <figure class="impressions__fig">
           <figcaption class="visually-hidden">Twitter Likes</figcaption>
+          <p class="impressions__category">Likes</p>
           <svg class="icon icon--twitter" aria-hidden="true">
             <use href="assets/icons.svg#icon-twitter"></use>
           </svg>
-          <p class="impressions__category">Likes</p>
           <p class="impressions__count">507</p>
           <p class="impressions__delta">553%</p>
         </figure>
 
         <figure class="impressions__fig">
           <figcaption class="visually-hidden">YouTube Likes</figcaption>
+          <p class="impressions__category">Likes</p>
           <svg class="icon icon--youtube" aria-hidden="true">
             <use href="assets/icons.svg#icon-youtube"></use>
           </svg>
-          <p class="impressions__category">Likes</p>
           <p class="impressions__count">107</p>
           <p class="impressions__delta">19%</p>
         </figure>
 
         <figure class="impressions__fig">
           <figcaption class="visually-hidden">YouTube Total Views</figcaption>
+          <p class="impressions__category">Total Views</p>
           <svg class="icon icon--youtube" aria-hidden="true">
             <use href="assets/icons.svg#icon-youtube"></use>
           </svg>
-          <p class="impressions__category">Total Views</p>
           <p class="impressions__count">1407</p>
           <p class="impressions__delta">12%</p>
         </figure>

@@ -1,0 +1,65 @@
+.followers {
+  display: grid;
+  gap: 1.5rem;
+}
+.followers__fig {
+  position: relative;
+  display: grid;
+  place-content: center;
+
+  height: 216px;
+  padding-top: 8px;
+  border-radius: 5px;
+
+  background-color: var(--theme-followers-bg);
+  text-align: center;
+  overflow: hidden;
+}
+.followers__fig .social-media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.followers__fig::after {
+  position: absolute;
+  top: 0;
+  content: "";
+  height: 4px;
+  width: 100%;
+}
+.followers__fig--twitter::after {
+  background-color: $clr-twitter;
+}
+.followers__fig--facebook::after {
+  background-color: $clr-facebook;
+}
+.followers__fig--youtube::after {
+  background-color: $clr-youtube;
+}
+.followers__fig--instagram {
+  position: relative;
+  border: 0;
+}
+.followers__fig--instagram::after {
+  background-image: $grad-instagram;
+}
+.followers__count {
+  margin-top: pxToRem(28px);
+}
+.followers__label {
+  margin-top: 0.5rem;
+}
+.followers__today {
+  margin-top: pxToRem(25px);
+}
+
+/*----------------------------------------------------------------------------
+  Tablet breakpoint
+ ----------------------------------------------------------------------------*/
+@include media-breakpoint("tablet") {
+  .followers {
+    gap: pxToRem(30px);
+    grid-auto-flow: column;
+  }
+}

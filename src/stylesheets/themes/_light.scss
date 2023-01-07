@@ -10,6 +10,7 @@
   --theme-text-regular: #{$clr-neutral-600};
   --theme-text-red: #{$clr-accent-red};
   --theme-text-green: #{$clr-accent-green};
+
   --theme-bg: #{$clr-neutral-100};
 
   // four bg's.  dark, white, light-gray, medium-gray
@@ -46,6 +47,10 @@
   );
   --theme-slider-bg: $grad-toggle;
   --theme-slider-thumb: white;
+
+  --theme-header-bg: #{$clr-neutral-250};
+  --theme-followers-bg: #{$clr-neutral-350};
+  --theme-impressions-bg: #{$clr-neutral-350};
 }
 
 .theme--light {

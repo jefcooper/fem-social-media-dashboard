@@ -63,6 +63,8 @@ At any time, the user may override the system selection by toggling the checkbox
 
 ### What I learned
 
+- gradient at top of card for instagram
+
 ### Bugs and Finishing Steps
 
 ### Useful resources

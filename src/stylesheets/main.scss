@@ -16,7 +16,10 @@
 @import "base/helpers";
 
 // 4. Layout
+@import "layout/header";
 @import "layout/social";
+@import "layout/followers";
+@import "layout/impressions";
 
 // 5. Components
 @import "components/toggle-switch";

@@ -1,0 +1,36 @@
+.today {
+  margin-top: pxToRem(46px);
+}
+
+.impressions {
+  display: grid;
+  gap: 1rem;
+  margin-top: pxToRem(27px);
+  padding-bottom: pxToRem(45px);
+}
+
+.impressions__fig {
+  display: grid;
+  justify-content: space-between;
+  align-content: space-between;
+  grid-template-columns: auto auto;
+  place-items: center;
+
+  height: 125px;
+  padding: 1.5rem;
+  background-color: var(--theme-impressions-bg);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+/*----------------------------------------------------------------------------
+  Tablet breakpoint
+ ----------------------------------------------------------------------------*/
+@include media-breakpoint("tablet") {
+  .impressions {
+    gap: pxToRem(30px);
+    grid-auto-flow: column;
+    grid-template-rows: auto auto;
+    padding-bottom: pxToRem(75px);
+  }
+}

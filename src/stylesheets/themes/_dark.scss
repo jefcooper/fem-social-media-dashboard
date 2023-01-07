@@ -64,6 +64,10 @@
   );
   --theme-slider-bg: $grad-toggle;
   --theme-slider-thumb: black;
+
+  --theme-header-bg: #{$clr-neutral-800};
+  --theme-followers-bg: #{$clr-neutral-700};
+  --theme-impressions-bg: #{$clr-neutral-700};
 }
 
 .theme--dark {
