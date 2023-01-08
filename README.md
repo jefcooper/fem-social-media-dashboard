@@ -81,6 +81,7 @@ Mobile:
 
 - https://stackoverflow.com/questions/56393880/how-do-i-detect-dark-mode-using-javascript
 - https://www.section.io/engineering-education/watch-for-system-dark-mode-using-js-css/
+- https://web.dev/building-a-theme-switch-component/
 
 #### Tooling
 
